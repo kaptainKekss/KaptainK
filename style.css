@@ -1,33 +1,34 @@
-#header{
-    background-color: blueviolet;
-    margin-top: 0;
-}
+
 body{
     background-color: rgb(188, 141, 231);
     margin: 0;
+    
+    
 }
 #logo-h{
     color: rgba(0, 0, 0, 0.753);
+    margin-bottom: 0;
+    float: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(236, 45, 243);
   }
   
   .topnav a {
-    float: left;
-    color: #3d0e0e;
+    float: right;
+    color: #7a099c;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 5px;
     text-decoration: none;
     font-size: 17px;
   }  
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: rgb(155, 9, 143);
     color: black;
   }  
   .topnav a.active {
-    background-color: #4CAF50;
-    color: white;
+    background-color: rgb(114, 17, 109);
+    color: rgb(241, 192, 229);
   }
