@@ -11,24 +11,14 @@ body{
     float: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.topnav {
+.breadcrumb-item{
+  float: right;
+}
+ .topnav {
     overflow: hidden;
+    margin-bottom: 0;
+    padding: 10px 5px;
     background-color: rgb(236, 45, 243);
   }
-  
-  .topnav a {
-    float: right;
-    color: #7a099c;
-    text-align: center;
-    padding: 10px 5px;
-    text-decoration: none;
-    font-size: 17px;
-  }  
-  .topnav a:hover {
-    background-color: rgb(155, 9, 143);
-    color: black;
-  }  
-  .topnav a.active {
-    background-color: rgb(114, 17, 109);
-    color: rgb(241, 192, 229);
-  }
+ 
+ 
