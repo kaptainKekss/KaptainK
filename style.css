@@ -15,12 +15,13 @@ margin: 0;
   float: left;
  height: 70px;
  padding : 5px;
+ margin-left: 10px;
 }
 
 /* Style the topnav links */
 .topnav a {
   float: right;
-  display: block;
+  /* display: block; */
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -49,13 +50,14 @@ background-color: rgba(255, 255, 255, 0);
 
 /* Style the footer */
 .footer {
-  background-color: #f1f1f1;
-  padding: 10px;
   
+  padding: 10px;
+  float: right;  
 }
-#bee{
-  width: 100%;
+.pagination.pagination{
+  border-color: white ;
+  margin-right: 20px;
 }
-.col-sm-9{
-  float: right;
+li a.active{
+  background-color: rgb(231, 219, 219);
 }
