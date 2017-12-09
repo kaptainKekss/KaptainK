@@ -61,3 +61,8 @@ background-color: rgba(255, 255, 255, 0);
 li a.active{
   background-color: rgb(231, 219, 219);
 }
+.topnav #active {
+  
+  background-color: rgb(231, 219, 219);
+  color: black;
+}
