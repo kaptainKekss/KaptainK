@@ -31,5 +31,26 @@ $(document).ready(function() {
                 });
             }
         });
-        
+        // function sendMessage() {
+        //     var msg = $("#message").value;
+        //     var x = document.createElement("div");
+        //     x.setAttribute("type", "text");
+        //     x.setAttribute("class", "well");
+        //     x.setAttribute("value", msg);
+        //     document.body.appendChild(x);
+        // }
+        // $("#send").click(function(){
+
+        //     var x = document.createElement("div");
+        //     x.setAttribute("type", "text");
+        //     x.setAttribute("class", "well");
+        //     x.setAttribute("value", "something here");
+            
+        //     $("div.showmsg").appendChild(x);
+        // });
+        $("#send").click(function(){
+            $("#showmsg").text(function(i, origText){
+                return "Old text: " + origText + " New text: Hello world! (index: " + i + ")"; 
+            });
+        });
     });
