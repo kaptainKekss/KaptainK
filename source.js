@@ -13,24 +13,24 @@ $(document).ready(function() {
     
         /* Apply fancybox to multiple items */
         
-        $(".grouped_elements").fancybox({
-            'transitionIn'	:	'elastic',
-            'transitionOut'	:	'elastic',
-            'speedIn'		:	600, 
-            'speedOut'		:	200, 
-            'overlayShow'	:	false
-        });
+        // $(".grouped_elements").fancybox({
+        //     'transitionIn'	:	'elastic',
+        //     'transitionOut'	:	'elastic',
+        //     'speedIn'		:	600, 
+        //     'speedOut'		:	200, 
+        //     'overlayShow'	:	false
+        // });
 
-        $(".grouped_elements").fancybox({
-            'titlePosition'	:	'over',
-            'onComplete'	:	function() {
-                $("#fancybox-wrap").hover(function() {
-                    $("#fancybox-title").show();
-                }, function() {
-                    $("#fancybox-title").hide();
-                });
-            }
-        });
+        // $(".grouped_elements").fancybox({
+        //     'titlePosition'	:	'over',
+        //     'onComplete'	:	function() {
+        //         $("#fancybox-wrap").hover(function() {
+        //             $("#fancybox-title").show();
+        //         }, function() {
+        //             $("#fancybox-title").hide();
+        //         });
+        //     }
+        // });
 
         function newMessage() {
             var li = document.createElement("li").innerHTML.addClass("msg"); 
