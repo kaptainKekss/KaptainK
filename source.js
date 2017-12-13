@@ -31,26 +31,61 @@ $(document).ready(function() {
                 });
             }
         });
-        // function sendMessage() {
-        //     var msg = $("#message").value;
-        //     var x = document.createElement("div");
-        //     x.setAttribute("type", "text");
-        //     x.setAttribute("class", "well");
-        //     x.setAttribute("value", msg);
-        //     document.body.appendChild(x);
-        // }
-        // $("#send").click(function(){
 
-        //     var x = document.createElement("div");
-        //     x.setAttribute("type", "text");
-        //     x.setAttribute("class", "well");
-        //     x.setAttribute("value", "something here");
+        function newMessage() {
+            var li = document.createElement("li").innerHTML.addClass("msg"); 
+        
+            var inputValue = document.getElementById("message").innerHTML.value;
             
-        //     $("div.showmsg").appendChild(x);
-        // });
-        $("#send").click(function(){
-            $("#showmsg").text(function(i, origText){
-                return "Old text: " + origText + " New text: Hello world! (index: " + i + ")"; 
-            });
-        });
+              var username = document.getElementById("name").innerHTML.value;
+              var user = document.createTextNode(username).innerHTML;
+              
+              var t = document.createTextNode(inputValue).innerHTML;
+              var div = document.createElement("div").innerHTML;
+              
+              var spa = document.createElement("span").innerHTML;
+              var space = spa.appendChild(document.createTextNode(": ").innerHTML).innerHTML;
+              
+              
+              var showUser = div.appendChild(user).innerHTML;
+              var showTxt = div.appendChild(t).innerHTML;
+          
+            
+            li.appendChild(showUser).innerHTML;
+            li.appendChild(space).innerHTML;
+           li.appendChild(showTxt).innerHTML;
+           
+           
+            if (inputValue === '') {
+              alert("You must write something!");
+            }else if(username === ''){
+            alert("You must provide username")
+            } else {
+              document.getElementById("myUL").appendChild(li).innerHTML;
+            }
+            document.getElementById("message").innerHTML.value = "";
+           document.getElementById("name").innerHTML.value = "";
+          
+           //get current time
+          
+          var d = new Date();
+          var h = d.getHours();
+          var m = d.getMinutes();
+          console.info( h + ":" + m);
+          
+            var span = document.createElement("SPAN").innerHTML;
+            var time = h + ":" + m; 
+            var stamp = document.createTextNode(time).innerHTML;
+            span.className = "timeStamp";
+            span.appendChild(stamp).innerHTML;
+            li.appendChild(span).innerHTML;
+          
+            for (i = 0; i < close.length; i++) {
+              close[i].onclick = function() {
+                var div = this.parentElement;
+                div.style.display = "none";
+              }
+            }
+          }
+          newMessage();
     });
